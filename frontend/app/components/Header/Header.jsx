@@ -5,15 +5,15 @@ import Container from '../Container/Container';
 
 export default function Header() {
   return (
-    <header className="">
+    <header className="py-12 w-full ">
         <Container>
-            <nav className="">
-                <menu className="flex gap-6 items-center">
+            <nav className="w-full">
+                <menu className="flex items-center justify-between">
                     {MenuList.map((menuItem) => (
                         <li key={menuItem.id} className="inline-flex">
                             {menuItem.isImage ? (
-                                <Link href={menuItem.url} className='text-base text-gray-900'>
-                                    <img src={menuItem.src} alt="" />
+                                <Link href={menuItem.url} className="text-base text-gray-900 px-32">
+                                    <img src={menuItem.src} alt="" width={65} height={53}/>
                                 </Link>
                             ) : (
                                 <Link href={menuItem.url} className='text-base text-gray-900'>{menuItem.title}</Link>
