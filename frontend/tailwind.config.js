@@ -21,14 +21,14 @@ module.exports = {
       // => @media (max-width: 1279px) { ... }
 
       'lg': {'max': '1024px'},
-      // => @media (max-width: 1023px) { ... }
+      // => @media (max-width: 1024px) { ... }
 
       'md': {'max': '768px'},
       // => @media (max-width: 767px) { ... }
 
       'sm': {'max': '564px'},
       // => @media (max-width: 639px) { ... }
-    }
+    },
   },
   plugins: [],
 };
